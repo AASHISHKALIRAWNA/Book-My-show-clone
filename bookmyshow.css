@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(204, 45, 45);
+    padding: 2rem;
+}
+
+h1{
+    color: white;
+}
+
+.right button{
+    font-size: 0.8rem;
+    border: none;
+    background-color:rgb(204, 45, 45) ;
+    margin-left: 0.5rem;
+    color: white;
+    padding-top: 0.7rem;
+    cursor: pointer;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+    background-color: rgb(187, 185, 185);
+
+}
+.searching{
+    width: 400px;
+    max-width: 60%;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 7.5px;
+
+}
+.button1{
+    padding: 0.5rem;
+    background-color: rgb(204, 45, 45);
+    color: white;
+    border-radius: 10px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-image: url(./mover.jpg);
+}
+.hero > h2{
+    background-color: black;
+    color: white;
+    margin-bottom: 1rem;
+
+}
+.hero > button{
+    background-color:  rgb(204, 45, 45);
+    border-radius: 7.5px;
+    padding: .5rem;
+    color: white;
+}
+.mover{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.mover > h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.movie{
+    display: flex;
+    overflow-x: scroll;
+    background-color: rgb(187, 185, 185);
+}
+.card{
+    margin: 5px;
+}
+.images{
+    height: 400px;
+    border: 5px solid rgb(195, 190, 190);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom{
+    max-width: 80%;
+    margin-top: 20px;
+}
+@media(max-width:650px){
+    .logo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .movie{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
